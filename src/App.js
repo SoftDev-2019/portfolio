@@ -8,49 +8,52 @@ import SassSVG from './assets/sass.svg';
 import JSSVG from './assets/javascript.svg';
 import CSS3SVG from './assets/css3.svg';
 import HTML5SVG from './assets/html5.svg';
+import NodeSVG from './assets/node-dot-js.svg';
+import profilePic from './assets/IMG_0554.jpeg';
 
 function App() {
   return (
     <div className='App'>
+      <div className='md-above-nav d-none d-md-flex'>
       <NavBar />
+      </div>
       <div className="container-fluid App-container">
         <div className='row App-container1-row1'>
           <div className='col-12 App-container1-row1-col1'>
               <h1 className='App-container1-row1-col1-title'>
                   <span className='app-title-span'> SHANE PARKERSON </span>
               </h1>
-              <br />
               <p className='App-container1-row1-col1-subtitle'>
-                  Software Developer
+                  Software Developer  |  Engineer  | Project Manager
               </p>
+              <h5 className='App-container1-row1-col1-credentials'>BSEE | PMP</h5>
           </div>
         </div>
-        <div className='row App-container1-row2'>
-            <div className='col-12 App-container1-header'>ABOUT ME</div>
-            <div className='col-12 App-container1-row2-col1'>
-              <div className='col-5 App-container1-row2-col1-fill'></div>
-              <div className='col-2 App-container1-row2-col1-image'></div>
-              <div className='col-5 App-container1-row2-col1-fill'></div>
-              <div className='col-4 App-container1-row2-col1-fill-content'></div>
-              <div className='col-4 App-container1-row2-col1-content'>
-                <p className='App-container1-row2-col2-text'>
-                  Passionate Technology advocate with a broad range of experience across software development, wireless engineering, data analytics, project and team management.
-                  <br />
-                  <br />
-                  Strong technical and analytical skills rooted in substantial engineering training and education, holding a BSEE and Project Management Professional(PMP) Certification. Self-taught developer who thrives on building productive, efficent code.
-                  <br />
-                  <br />
-                  Posses C-level Professional abilities focused on collaboration, communication, self-motivation, loyalty, critical-thinking and problem solving to deliver client and team success. 
-                </p>
-              </div>
+        <div className='row App-container1-row2' id='aboutme'>
+            <div className='col-12 App-container1-header'><span className='header-title-span'> ABOUT ME</span></div>
+            <div className='col-7 d-block mx-auto App-container1-row2-col1'>
+            <img src={profilePic} className="img-fluid mx-auto d-block profilepic" alt="" />
+            </div>
+            <div className='col-12 d-flex mx-auto App-container1-row2-col2'>
+              <p className='profile-content d-block'>
+                    Accomplished Technology professional with a broad range of experience across software development, 
+                <br />wireless engineering, data analytics, project and team management.  I've spent a good deal
+                <br /> of my career leading wireless engineering teams in building out cellular networks for
+                <br />companies such as Nextel, Sprint and most recently SI Wireless.
+                <br />
+                <br />I enjoy being creative and making awesome applications for my clients.  When I am not 
+                <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
+                <br /> at the baseball fields.  Go Cards!
+              </p>
+             
             </div>
         </div>
-        <div className='row App-container1-row3'>
-          <div className='col-12 App-container1-header'>PORTFOLIO</div>
+        <div className='row App-container1-row3' id='portfolio'>
+          <div className='col-12 App-container1-header'><span className='header-title-span'> PORTFOLIO </span></div>
           <div className='col-6 App-container1-row3-col1'>
             <a className='project1-link' target={"_blank"} href='https://franklingeneralsdb.web.app/' alt=''><span></span></a>
             <h5 className='project1-title'>Franklin Generals Baseball Team</h5>
-            <div className='techimage-container'>
+            <div className='techimage-container d-none d-md-flex'>
               <img className='techimage' src={ReactSVG} alt='' />
               <img className='techimage' src={ReduxSVG} alt=''/>
               <img className='techimage' src={FirebaseSVG} alt=''/>
@@ -58,12 +61,13 @@ function App() {
               <img className='techimage' src={SassSVG} alt=''/>
               <img className='techimage' src={CSS3SVG} alt=''/>
               <img className='techimage' src={HTML5SVG} alt=''/>
+              <img className='techimage' src={NodeSVG} alt=''/>
             </div>
           </div>
           <div className='col-6 App-container1-row3-col2'>
             <a className='project2-link' target={"_blank"} href='https://softdev-2019-crowndb.web.app/' alt=''><span></span></a>
             <h5 className='project1-title'>Crown Clothing E-Commerce</h5>
-            <div className='techimage-container'>
+            <div className='techimage-container d-none d-md-flex'>
               <img className='techimage' src={ReactSVG} alt='' />
               <img className='techimage' src={ReduxSVG} alt=''/>
               <img className='techimage' src={FirebaseSVG} alt=''/>
@@ -71,18 +75,23 @@ function App() {
               <img className='techimage' src={SassSVG} alt=''/>
               <img className='techimage' src={CSS3SVG} alt=''/>
               <img className='techimage' src={HTML5SVG} alt=''/>
+              <img className='techimage' src={NodeSVG} alt=''/>
             </div>
           </div>
         </div>
-        <div className='row App-container1-row4'>
-        <div className='col-12 App-container1-header'>CONTACT</div>
+        <div className='row App-container1-row4' id='contact'>
+        <div className='col-12 App-container1-header'><span className='header-title-span'> CONTACT </span></div>
           <div className='col-12 App-container1-row4-col1'>
             <h1 className='contact-title'>Let's Work Together!!!</h1>
-            <a href="mailto:shaneaparkerson@icloud.com" style={{color: 'black', textDecoration: 'underline'}}><i className="far fa-envelope"></i>shaneAparkerson@icloud.com</a>
-            <div className='contact-links'>
-                <a target={"_blank"}  href='https://www.linkedin.com/in/shaneparkerson/'> <i className="fab fa-linkedin-in fa-2x"></i> </a>
+            <a className='email-mobile d-md-none' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '10px'}}><i className="far fa-envelope"></i>shaneAparkerson@icloud.com</a>
+            <a className='email-mobile d-none d-md-flex' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '18px'}}><i className="far fa-envelope"></i>shaneAparkerson@icloud.com</a>
+            <div className='contact-links d-md-none'>
+                <a className='email-link' target={"_blank"}  href='https://www.linkedin.com/in/shaneparkerson/'> <i className="fab fa-linkedin-in fa-lg"></i> </a>
+                <a target={"_blank"}  href='https://github.com/SoftDev-2019'><i className="fab fa-github fa-lg"></i></a>  
+            </div>
+            <div className='contact-links d-none d-md-flex'>
+                <a className='email-link' target={"_blank"}  href='https://www.linkedin.com/in/shaneparkerson/'> <i className="fab fa-linkedin-in fa-2x"></i> </a>
                 <a target={"_blank"}  href='https://github.com/SoftDev-2019'><i className="fab fa-github fa-2x"></i></a>  
-             
             </div>
           </div>
         </div>

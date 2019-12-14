@@ -10,12 +10,16 @@ import CSS3SVG from './assets/css3.svg';
 import HTML5SVG from './assets/html5.svg';
 import NodeSVG from './assets/node-dot-js.svg';
 import profilePic from './assets/IMG_0554.jpeg';
+import HamburgerNav from './components/hamburger-nav/hamburger-nav.component';
 
 function App() {
   return (
     <div className='App'>
       <div className='md-above-nav d-none d-md-flex'>
       <NavBar />
+      </div>
+      <div className='hamburger-nav-below-md d-md-none'>
+      <HamburgerNav />
       </div>
       <div className="container-fluid App-container">
         <div className='row App-container1-row1'>
@@ -35,7 +39,7 @@ function App() {
             <img src={profilePic} className="img-fluid mx-auto d-block profilepic" alt="" />
             </div>
             <div className='col-12 d-flex mx-auto App-container1-row2-col2'>
-              <p className='profile-content d-block'>
+              <p className='profile-content d-none d-md-block'>
                     Accomplished Technology professional with a broad range of experience across software development, 
                 <br />wireless engineering, data analytics, project and team management.  I've spent a good deal
                 <br /> of my career leading wireless engineering teams in building out cellular networks for
@@ -45,7 +49,17 @@ function App() {
                 <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
                 <br /> at the baseball fields.  Go Cards!
               </p>
-             
+              <p className='profile-content d-block d-md-none'>
+                    Accomplished Technology professional with a broad range of experience across software development, 
+                wireless engineering, data analytics, project and team management.  
+                <br /> 
+                <br />I've spent a good deal of my career leading wireless engineering teams in building out cellular networks for
+                companies such as Nextel, Sprint and most recently SI Wireless.
+                <br />
+                <br />I enjoy being creative and making awesome applications for my clients.  When I am not 
+                <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
+                <br /> at the baseball fields.  Go Cards!
+              </p>
             </div>
         </div>
         <div className='row App-container1-row3' id='portfolio'>
@@ -53,7 +67,7 @@ function App() {
           <div className='col-6 App-container1-row3-col1'>
             <a className='project1-link' target={"_blank"} href='https://franklingeneralsdb.web.app/' alt=''><span></span></a>
             <h5 className='project1-title'>Franklin Generals Baseball Team</h5>
-            <div className='techimage-container d-none d-md-flex'>
+            <div className='techimage-container d-none d-lg-flex'>
               <img className='techimage' src={ReactSVG} alt='' />
               <img className='techimage' src={ReduxSVG} alt=''/>
               <img className='techimage' src={FirebaseSVG} alt=''/>
@@ -67,7 +81,7 @@ function App() {
           <div className='col-6 App-container1-row3-col2'>
             <a className='project2-link' target={"_blank"} href='https://softdev-2019-crowndb.web.app/' alt=''><span></span></a>
             <h5 className='project1-title'>Crown Clothing E-Commerce</h5>
-            <div className='techimage-container d-none d-md-flex'>
+            <div className='techimage-container d-none d-lg-flex'>
               <img className='techimage' src={ReactSVG} alt='' />
               <img className='techimage' src={ReduxSVG} alt=''/>
               <img className='techimage' src={FirebaseSVG} alt=''/>

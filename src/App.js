@@ -1,16 +1,9 @@
 import React from 'react';
 import NavBar from './components/navbar/navbar.component';
 import './App.scss';
-import ReactSVG from './assets/react.svg';
-import ReduxSVG from './assets/redux.svg'
-import FirebaseSVG from './assets/firebase.svg';
-import SassSVG from './assets/sass.svg';
-import JSSVG from './assets/javascript.svg';
-import CSS3SVG from './assets/css3.svg';
-import HTML5SVG from './assets/html5.svg';
-import NodeSVG from './assets/node-dot-js.svg';
-import profilePic from './assets/IMG_0554.jpeg';
+import profilePic from './assets/newportpic.jpg';
 import HamburgerNav from './components/hamburger-nav/hamburger-nav.component';
+import ProjectCard from './components/project/project.component';
 
 function App() {
   return (
@@ -45,60 +38,36 @@ function App() {
                 <br /> of my career leading wireless engineering teams in building out cellular networks for
                 <br />companies such as Nextel, Sprint and most recently SI Wireless.
                 <br />
-                <br />I enjoy being creative and making awesome applications for my clients.  When I am not 
+                <br />I have found a passion in web development and have shifted course to pursue the career full time.  When I am not 
                 <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
                 <br /> at the baseball fields.  Go Cards!
               </p>
               <p className='profile-content d-block d-md-none'>
                     Accomplished Technology professional with a broad range of experience across software development, 
-                wireless engineering, data analytics, project and team management.  
-                <br /> 
-                <br />I've spent a good deal of my career leading wireless engineering teams in building out cellular networks for
-                companies such as Nextel, Sprint and most recently SI Wireless.
-                <br />
-                <br />I enjoy being creative and making awesome applications for my clients.  When I am not 
-                <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
-                <br /> at the baseball fields.  Go Cards!
+                    wireless engineering, data analytics, project and team management.  
+                    <br /> 
+                    <br />I've spent a good deal of my career leading wireless engineering teams in building out cellular networks for
+                    companies such as Nextel, Sprint and most recently SI Wireless.
+                    <br />
+                    <br />I have found a passion in web development and have shifted course to pursue the adventure.  When I am not 
+                    <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
+                    <br /> at the baseball fields.  Go Cards!
               </p>
             </div>
         </div>
         <div className='row App-container1-row3' id='portfolio'>
           <div className='col-12 App-container1-header'><span className='header-title-span'> PORTFOLIO </span></div>
-          <div className='col-6 App-container1-row3-col1'>
-            <a className='project1-link' target={"_blank"} href='https://franklingeneralsdb.web.app/' alt=''><span></span></a>
-            <h5 className='project1-title'>Franklin Generals Baseball Team</h5>
-            <div className='techimage-container d-none d-lg-flex'>
-              <img className='techimage' src={ReactSVG} alt='' />
-              <img className='techimage' src={ReduxSVG} alt=''/>
-              <img className='techimage' src={FirebaseSVG} alt=''/>
-              <img className='techimage' src={JSSVG} alt=''/>
-              <img className='techimage' src={SassSVG} alt=''/>
-              <img className='techimage' src={CSS3SVG} alt=''/>
-              <img className='techimage' src={HTML5SVG} alt=''/>
-              <img className='techimage' src={NodeSVG} alt=''/>
-            </div>
+          <div className='App-container1-row3-col1'>
+            <ProjectCard />
           </div>
-          <div className='col-6 App-container1-row3-col2'>
-            <a className='project2-link' target={"_blank"} href='https://softdev-2019-crowndb.web.app/' alt=''><span></span></a>
-            <h5 className='project1-title'>Crown Clothing E-Commerce</h5>
-            <div className='techimage-container d-none d-lg-flex'>
-              <img className='techimage' src={ReactSVG} alt='' />
-              <img className='techimage' src={ReduxSVG} alt=''/>
-              <img className='techimage' src={FirebaseSVG} alt=''/>
-              <img className='techimage' src={JSSVG} alt=''/>
-              <img className='techimage' src={SassSVG} alt=''/>
-              <img className='techimage' src={CSS3SVG} alt=''/>
-              <img className='techimage' src={HTML5SVG} alt=''/>
-              <img className='techimage' src={NodeSVG} alt=''/>
-            </div>
-          </div>
+            
         </div>
         <div className='row App-container1-row4' id='contact'>
         <div className='col-12 App-container1-header'><span className='header-title-span'> CONTACT </span></div>
           <div className='col-12 App-container1-row4-col1'>
             <h1 className='contact-title'>Let's Work Together!!!</h1>
-            <a className='email-mobile d-md-none' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '10px'}}><i className="far fa-envelope"></i>shaneAparkerson@icloud.com</a>
-            <a className='email-mobile d-none d-md-flex' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '18px'}}><i className="far fa-envelope"></i>shaneAparkerson@icloud.com</a>
+            <a className='email-mobile d-md-none' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '10px'}}><i className="far fa-envelope" ></i>shaneAparkerson@icloud.com</a>
+            <span className='emailspan'><i className="far fa-envelope"></i><a className='email-mobile d-none d-md-flex' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '18px'}}>shaneAparkerson@icloud.com</a></span>
             <div className='contact-links d-md-none'>
                 <a className='email-link' target={"_blank"}  href='https://www.linkedin.com/in/shaneparkerson/'> <i className="fab fa-linkedin-in fa-lg"></i> </a>
                 <a target={"_blank"}  href='https://github.com/SoftDev-2019'><i className="fab fa-github fa-lg"></i></a>  

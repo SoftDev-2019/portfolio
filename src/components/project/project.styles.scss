@@ -1,0 +1,41 @@
+.projectcard-container {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    border: 1px solid black;
+
+    
+    .projectcard-title {
+        padding-top: 10px;
+        font-size: 30px;
+
+    }
+    
+    .projectcard-techimage-container {
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        width: 70%;
+      
+
+
+        .projectcard-techimage {
+            width: 50px;
+        }
+    }
+    .projectcard-link {
+        height: 300px;
+        display: block;
+        width: 70%;
+
+    }
+    .projectcard-link:hover {
+        transform: scale(1.1);
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+
+}

@@ -847,39 +847,7 @@
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
-
-                
-                .project1-title {
-                    padding-top: 10px;
-                    font-size: 20px;
-                }
-                
-                .techimage-container {
-                    display: flex;
-                    justify-content: center;
-                    height: 75px;
-                    width: 50%;
-
-
-                    .techimage {
-                        width: 50px;
-                    }
-                }
-                .project1-link {
-                    height: 350px;
-                    display: block;
-                    width: 70%;
-                    background-image: url('./assets/Generals.jpg');
-                    background-size: cover;
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    border: none;
-                }
-                .project1-link:hover {
-                    transform: scale(1.1);
-                    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-                }
-
+                width: 100%;
             }
             .App-container1-row3-col2 {
                 height: 550px;
@@ -952,10 +920,16 @@
                 justify-content: center;
                 color: whitesmoke;
 
+                .emailspan {
+                    display: flex;
+                    flex: row;
+                    padding-top: 5px;
+                }
                 
                 .far {
+                    padding-top: 5px;
                     padding-right: 5px;
-                    color: whitesmoke;
+                    color: green;
                 }
                 .contact-title {
                     font-size: 20px;

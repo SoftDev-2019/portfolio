@@ -70,17 +70,17 @@
         
                
         .App-container1-row2-col1 {
-            height: 105px;
+            height: 155px;
 
             .profilepic {
-               height: 100px;
-               width: 100px;
+               height: 150px;
+               width: 150px;
                border-radius: 50%;
             }
         }
         .App-container1-row2-col2 {
             height: 220px;
-            font-size: 8px;
+            font-size: 10px;
             color: whitesmoke;
             opacity: 0.85;
             display: flex;
@@ -94,18 +94,20 @@
             padding-bottom: 15px;
             margin: 30px;
             text-align: center;
-            font-size: 9px;
+            font-size: 9.5px;
             }
         }
     }
 
     .App-container1-row3 {
-        height: 300px;
+        min-height: 300px;
+        height: auto;
         align-items: center;
         justify-content: center;
 
         .App-container1-header {
-            height: 50px;
+            min-height: 50px;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -122,9 +124,10 @@
         }
 
         .App-container1-row3-col1 {
-            height: 250px;
-            display: block;
-            flex-direction: column;
+            min-height: 250px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
@@ -208,7 +211,7 @@
         }
     }
     .App-container1-row4 {
-        height: 130px;
+        height: 140px;
         background: rgba(26,24,24,0.5);
 
         .App-container1-header {
@@ -313,9 +316,6 @@
             }
             .App-container1-row2-col2 {
                
-
-                
-
                 .profile-content {
                 font-size: 15px;
                 }
@@ -533,18 +533,16 @@
             }
             
             .App-container1-row2-col1 {
-                height: 265px;
+                height: 315px;
 
                 .profilepic {
-                   height: 260px;
-                   width: 260px;
+                   height: 300px;
+                   width: 300px;
                    border-radius: 50%;
                 }
             }
             .App-container1-row2-col2 {
                
-
-                
 
                 .profile-content {
                 font-size: 18px;
@@ -789,11 +787,11 @@
             }
             
             .App-container1-row2-col1 {
-                height: 265px;
+                height: 365px;
 
                 .profilepic {
-                   height: 260px;
-                   width: 260px;
+                   height: 360px;
+                   width: 360px;
                    border-radius: 50%;
                 }
             }

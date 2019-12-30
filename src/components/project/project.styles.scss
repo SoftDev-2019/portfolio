@@ -1,41 +1,223 @@
-.projectcard-container {
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 35%;
-    border: 1px solid black;
-
-    
-    .projectcard-title {
-        padding-top: 10px;
-        font-size: 30px;
-
-    }
-    
-    .projectcard-techimage-container {
+@media (min-width: 0px) and (max-width: 374px) {
+    .projectcard-container {
+        min-height: 150px;
+        height: auto;
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
-        height: 75px;
-        width: 70%;
-      
+        width: 85%;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        font-family: 'Arvo', serif;
 
-
-        .projectcard-techimage {
-            width: 50px;
+        
+        .projectcard-title {
+            padding-top: 10px;
+            font-size: 12px;
         }
-    }
-    .projectcard-link {
-        height: 300px;
-        display: block;
-        width: 70%;
+        
+        .projectcard-techimage-container {
+            display: flex;
+            justify-content: center;
+            height: 35px;
+            width: 70%;
+        
+            .projectcard-techimage {
+                width: 20px;
+            }
+        }
+        .projectcard-link {
+            height: 150px;
+            display: block;
+            width: 100%;
+            padding-bottom: 30px;
+
+        }
+        .projectcard-link:hover {
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
 
     }
-    .projectcard-link:hover {
-        transform: scale(1.1);
-        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-    }
+}
 
+@media (min-width: 375px) and (max-width: 413px) {
+    .projectcard-container {
+        min-height: 150px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        font-family: 'Arvo', serif;
+
+        
+        .projectcard-title {
+            padding-top: 10px;
+            font-size: 12px;
+        }
+        
+        .projectcard-techimage-container {
+            display: flex;
+            justify-content: center;
+            height: 35px;
+            width: 70%;
+        
+            .projectcard-techimage {
+                width: 20px;
+            }
+        }
+        .projectcard-link {
+            height: 170px;
+            display: block;
+            width: 100%;
+            padding-bottom: 30px;
+
+        }
+        .projectcard-link:hover {
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+
+    }
+}
+
+@media (min-width: 414px) and (max-width: 767px) {
+    .projectcard-container {
+        min-height: 150px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        font-family: 'Arvo', serif;
+
+        
+        .projectcard-title {
+            padding-top: 10px;
+            font-size: 12px;
+        }
+        
+        .projectcard-techimage-container {
+            display: flex;
+            justify-content: center;
+            height: 35px;
+            width: 70%;
+        
+            .projectcard-techimage {
+                width: 20px;
+            }
+        }
+        .projectcard-link {
+            height: 190px;
+            display: block;
+            width: 100%;
+            padding-bottom: 30px;
+
+        }
+        .projectcard-link:hover {
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .projectcard-container {
+        min-height: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        font-family: 'Arvo', serif;
+
+        
+        .projectcard-title {
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        
+        .projectcard-techimage-container {
+            display: flex;
+            justify-content: center;
+            height: 35px;
+            width: 70%;
+        
+            .projectcard-techimage {
+                width: 20px;
+            }
+        }
+        .projectcard-link {
+            height: 150px;
+            width: 70%;
+            padding-bottom: 30px;
+
+        }
+        .projectcard-link:hover {
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 5000px) {
+    .projectcard-container {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        border: 1px solid black;
+    
+        
+        .projectcard-title {
+            padding-top: 10px;
+            font-size: 30px;
+    
+        }
+        
+        .projectcard-techimage-container {
+            display: flex;
+            justify-content: center;
+            height: 75px;
+            width: 70%;
+          
+    
+    
+            .projectcard-techimage {
+                width: 50px;
+            }
+        }
+        .projectcard-link {
+            height: 300px;
+            display: block;
+            width: 70%;
+    
+        }
+        .projectcard-link:hover {
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+    
+    }
 }

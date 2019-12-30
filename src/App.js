@@ -38,26 +38,27 @@ function App() {
                 <br /> of my career leading wireless engineering teams in building out cellular networks for
                 <br />companies such as Nextel, Sprint and most recently SI Wireless.
                 <br />
-                <br />I have found a passion in web development and have shifted course to pursue the career full time.  When I am not 
-                <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
-                <br /> at the baseball fields.  Go Cards!
+                <br />I have found a passion in web development and have shifted course to pursue the career  
+                <br />full time.  When I am not coding, I enjoy time with my family, hiking, working out and can almost always be found
+                <br /> on the baseball field.  Go Cards!
               </p>
               <p className='profile-content d-block d-md-none'>
                     Accomplished Technology professional with a broad range of experience across software development, 
-                    wireless engineering, data analytics, project and team management.  
+                    wireless engineering, 
+                    <br />data analytics, project and team management.  
                     <br /> 
                     <br />I've spent a good deal of my career leading wireless engineering teams in building out cellular networks for
                     companies such as Nextel, Sprint and most recently SI Wireless.
                     <br />
-                    <br />I have found a passion in web development and have shifted course to pursue the adventure.  When I am not 
-                    <br /> coding, I enjoy time with my family, hiking, working out and can almost always be found
-                    <br /> at the baseball fields.  Go Cards!
+                    <br />I have found a passion in web development and have shifted course to pursue the career full time.  When I am  
+                    <br />not coding, I enjoy time with my family, hiking, working out and can almost always 
+                    <br />be found on the baseball field.  Go Cards!
               </p>
             </div>
         </div>
         <div className='row App-container1-row3' id='portfolio'>
           <div className='col-12 App-container1-header'><span className='header-title-span'> PORTFOLIO </span></div>
-          <div className='App-container1-row3-col1'>
+          <div className='col-12 App-container1-row3-col1'>
             <ProjectCard />
           </div>
             
@@ -67,7 +68,7 @@ function App() {
           <div className='col-12 App-container1-row4-col1'>
             <h1 className='contact-title'>Let's Work Together!!!</h1>
             <a className='email-mobile d-md-none' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '10px'}}><i className="far fa-envelope" ></i>shaneAparkerson@icloud.com</a>
-            <span className='emailspan'><i className="far fa-envelope"></i><a className='email-mobile d-none d-md-flex' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '18px'}}>shaneAparkerson@icloud.com</a></span>
+            <span className='emailspan d-none d-md-flex'><i className="far fa-envelope"></i><a className='email-mobile' href="mailto:shaneaparkerson@icloud.com" style={{color: 'whitesmoke', textDecoration: 'underline', fontSize: '18px'}}>shaneAparkerson@icloud.com</a></span>
             <div className='contact-links d-md-none'>
                 <a className='email-link' target={"_blank"}  href='https://www.linkedin.com/in/shaneparkerson/'> <i className="fab fa-linkedin-in fa-lg"></i> </a>
                 <a target={"_blank"}  href='https://github.com/SoftDev-2019'><i className="fab fa-github fa-lg"></i></a>  

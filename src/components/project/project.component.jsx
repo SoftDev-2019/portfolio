@@ -53,14 +53,15 @@ class ProjectCard extends Component {
         
         return (
            data.map(project => (
-                <div className='projectcard-container' >
+                <div className='projectcard-container'>
                  <h5 className='projectcard-title'>{project.name}</h5>
                     <a className='projectcard-link' target={"_blank"} href={project.projectUrl} alt='' style={{
                     backgroundImage: `url(${project.imageUrl})`,
-                    backgroundSize: 'contain'
+                    backgroundSize: 'contain',
+                    
                     }} ><span></span></a>
                    
-                    <div className='projectcard-techimage-container d-none d-lg-flex'>
+                    <div className='projectcard-techimage-container d-sm-flex d-lg-flex'>
                         { project.stack.map(s =>
                             <img className='projectcard-techimage' src={s} alt='' />
                         )}

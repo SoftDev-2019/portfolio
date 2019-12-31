@@ -18,6 +18,7 @@ class ProjectCard extends Component {
                 id: 1,
                 name: 'Franklin Generals',
                 imageUrl: GeneralsProjectImage,
+                gitUrl: 'https://github.com/SoftDev-2019/frklngenerals',
                 projectUrl: 'https://franklingeneralsdb.web.app/',
                 stack: [ JSSVG,
                     ReactSVG,
@@ -33,6 +34,7 @@ class ProjectCard extends Component {
                 id: 2,
                 name: 'Crown-Clothing',
                 imageUrl: CrownClothingProjectImage,
+                gitUrl: 'https://github.com/SoftDev-2019/crown-clothing-node',
                 projectUrl: 'https://softdev-2019-crowndb.web.app/',
                 stack: [ JSSVG,
                     ReactSVG,
@@ -54,7 +56,7 @@ class ProjectCard extends Component {
         return (
            data.map(project => (
                 <div className='projectcard-container'>
-                 <h5 className='projectcard-title'>{project.name}</h5>
+                 <h5 className='projectcard-title'><a target={"_blank"} href={project.gitUrl} style={{color: 'gray', opacity: 0.8}}>{project.name}</a></h5>
                     <a className='projectcard-link' target={"_blank"} href={project.projectUrl} alt='' style={{
                     backgroundImage: `url(${project.imageUrl})`,
                     backgroundSize: 'contain',

@@ -59,8 +59,8 @@ class ProjectCard extends Component {
                  <h5 className='projectcard-title'><a target={"_blank"} href={project.gitUrl} style={{color: 'gray', opacity: 0.8}}>{project.name}</a></h5>
                     <a className='projectcard-link' target={"_blank"} href={project.projectUrl} alt='' style={{
                     backgroundImage: `url(${project.imageUrl})`,
-                    backgroundSize: 'contain',
-                    
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center'
                     }} ><span></span></a>
                    
                     <div className='projectcard-techimage-container d-sm-flex d-lg-flex'>
